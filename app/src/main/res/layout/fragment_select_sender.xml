@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data>
+
+        <variable
+            name="onclick"
+            type="android.view.View.OnClickListener" />
+
+
+    </data>
+
+    <ScrollView
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:fontFamily="@font/grillbold"
+                android:textSize="32dp"
+                android:textColor="@color/black"
+                android:text="Send Notification To"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <androidx.cardview.widget.CardView
+                android:elevation="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/liStudent"
+                        android:onClick="@{onclick}"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/ivStudent"
+                            android:src="@drawable/student"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"/>
+                        <TextView
+                            android:id="@+id/tvStudent"
+                            android:textColor="@color/black"
+                            android:textSize="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/student"
+                            android:inputType="textCapWords"
+                            android:drawableEnd="@drawable/ic_black_right_arow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:background="@color/viewline"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/liTeacher"
+                        android:onClick="@{onclick}"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/teacher"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/teacher"
+                            android:drawableEnd="@drawable/ic_black_right_arow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:background="@color/viewline"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/liAll"
+                        android:onClick="@{onclick}"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:src="@drawable/document"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"/>
+                        <TextView
+                            android:textColor="@color/black"
+                            android:textSize="22dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/all"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_black_right_arow"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:background="@color/viewline"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</layout>

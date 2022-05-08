@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SncAdmin</string>
+
+    <string name="student">Students</string>
+    <string name="teacher">Teachers</string>
+    <string name="all">All</string>
+
+    <string name="need_permission">Need Permission</string>
+    <string name="file_permission_message">needs file permission to upload CV.</string>
+    <string name="allow">Allow</string>
+    <string name="title_no">No</string>
+</resources>
