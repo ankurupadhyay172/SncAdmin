@@ -5,7 +5,7 @@
 
     <data>
 
-        <import type="com.ankurupadhyay.sncadmin.ui.beforestart.AuthViewModel"/>
+        <import type="com.androidcafe.sncuser.ui.beforestart.AuthViewModel"/>
         <import type="android.view.View"/>
 
         <variable

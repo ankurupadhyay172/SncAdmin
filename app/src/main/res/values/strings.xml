@@ -9,4 +9,6 @@
     <string name="file_permission_message">needs file permission to upload CV.</string>
     <string name="allow">Allow</string>
     <string name="title_no">No</string>
+
+    <string name="logout">Logout</string>
 </resources>

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashScreenFragment"
-        android:name="com.ankurupadhyay.sncadmin.ui.beforestart.SplashScreenFragment"
+        android:name="com.androidcafe.sncuser.ui.beforestart.SplashScreenFragment"
         android:label="SplashScreenFragment"
         tools:layout="@layout/fragment_splash">
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/collegeSelectFragment"
-        android:name="com.ankurupadhyay.sncadmin.ui.beforestart.CollegeSelectFragment"
+        android:name="com.androidcafe.sncuser.ui.beforestart.CollegeSelectFragment"
         android:label="CollegeSelectFragment"
         tools:layout="@layout/fragment_select_college">
         <action
@@ -32,7 +32,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginUserFragment"
-        android:name="com.ankurupadhyay.sncadmin.ui.beforestart.LoginUserFragment"
+        android:name="com.androidcafe.sncuser.ui.beforestart.LoginUserFragment"
         android:label="LoginUserFragment"
         tools:layout="@layout/fragment_login_user">
         <argument
@@ -47,7 +47,7 @@
     </fragment>
     <fragment
         android:id="@+id/adminHomeFragment"
-        android:name="com.ankurupadhyay.sncadmin.ui.home.AdminHomeFragment"
+        android:name="com.androidcafe.sncuser.ui.home.AdminHomeFragment"
         android:label="AdminHomeFragment"
         tools:layout="@layout/fragment_admin_home">
         <action
@@ -59,7 +59,7 @@
     </fragment>
     <fragment
         android:id="@+id/notificationsFragment"
-        android:name="com.ankurupadhyay.sncadmin.ui.home.notifications.NotificationsFragment"
+        android:name="com.androidcafe.sncuser.ui.home.notifications.NotificationsFragment"
         android:label="NotificationsFragment"
         tools:layout="@layout/fragment_notifications">
         <action
@@ -68,7 +68,7 @@
     </fragment>
     <fragment
         android:id="@+id/addNotificationFragment"
-        android:name="com.ankurupadhyay.sncadmin.ui.home.notifications.AddNotificationFragment"
+        android:name="com.androidcafe.sncuser.ui.home.notifications.AddNotificationFragment"
         android:label="AddNotificationFragment"
         tools:layout="@layout/fragment_add_notification">
         <argument
@@ -81,7 +81,7 @@
     </fragment>
     <fragment
         android:id="@+id/selectSenderNotificationFragment"
-        android:name="com.ankurupadhyay.sncadmin.ui.home.notifications.SelectSenderNotificationFragment"
+        android:name="com.androidcafe.sncuser.ui.home.notifications.SelectSenderNotificationFragment"
         android:label="SelectSenderNotificationFragment"
         tools:layout="@layout/fragment_select_sender">
         <action
@@ -90,7 +90,7 @@
     </fragment>
     <fragment
         android:id="@+id/coursesFragment"
-        android:name="com.ankurupadhyay.sncadmin.ui.home.subject.CoursesFragment"
+        android:name="com.androidcafe.sncuser.ui.home.subject.CoursesFragment"
         android:label="CoursesFragment"
         >
         <action
@@ -99,15 +99,24 @@
         <action
             android:id="@+id/action_coursesFragment_to_courseSubjectFragment"
             app:destination="@id/courseSubjectFragment" />
+        <action
+            android:id="@+id/action_coursesFragment_to_addTeacherFragment"
+            app:destination="@id/addTeacherFragment" />
+        <action
+            android:id="@+id/action_coursesFragment_to_teachersFragment"
+            app:destination="@id/teachersFragment" />
+        <action
+            android:id="@+id/action_coursesFragment_to_teachersFragment2"
+            app:destination="@id/teachersFragment" />
     </fragment>
     <fragment
         android:id="@+id/addCourseFragment"
-        android:name="com.ankurupadhyay.sncadmin.ui.home.subject.AddCourseFragment"
+        android:name="com.androidcafe.sncuser.ui.home.subject.AddCourseFragment"
         android:label="AddCourseFragment"
         tools:layout="@layout/fragment_add_course"/>
     <fragment
         android:id="@+id/courseSubjectFragment"
-        android:name="com.ankurupadhyay.sncadmin.ui.home.subject.CourseSubjectFragment"
+        android:name="com.androidcafe.sncuser.ui.home.subject.CourseSubjectFragment"
         android:label="CourseSubjectFragment" >
         <action
             android:id="@+id/action_courseSubjectFragment_to_addSubjectFragment"
@@ -116,10 +125,23 @@
             android:name="id"
             app:argType="string"
             app:nullable="true" />
+        <action
+            android:id="@+id/action_courseSubjectFragment_to_studentsFragment"
+            app:destination="@id/studentsFragment" />
+        <action
+            android:id="@+id/action_courseSubjectFragment_to_studentsFragment2"
+            app:destination="@id/studentsFragment" />
+        <action
+            android:id="@+id/action_courseSubjectFragment_to_teachersFragment"
+            app:destination="@id/teachersFragment"
+            />
+        <action
+            android:id="@+id/action_courseSubjectFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
     </fragment>
     <fragment
         android:id="@+id/addSubjectFragment"
-        android:name="com.ankurupadhyay.sncadmin.ui.home.subject.AddSubjectFragment"
+        android:name="com.androidcafe.sncuser.ui.home.subject.AddSubjectFragment"
         android:label="AddSubjectFragment"
         tools:layout="@layout/fragment_add_course">
         <argument
@@ -127,4 +149,60 @@
             app:argType="string"
             app:nullable="true" />
     </fragment>
+    <fragment
+        android:id="@+id/studentsFragment"
+        android:name="com.androidcafe.sncuser.ui.home.subject.StudentsFragment"
+        android:label="StudentsFragment"
+        tools:layout="@layout/item_students">
+        <argument
+            android:name="course"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="year"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_studentsFragment_to_addStudentFragment"
+            app:destination="@id/addStudentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teachersFragment"
+        android:name="com.androidcafe.sncuser.ui.home.subject.TeachersFragment"
+        android:label="TeachersFragment" >
+        <argument
+            android:name="course"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_teachersFragment_to_addTeacherFragment"
+            app:destination="@id/addTeacherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addTeacherFragment"
+        android:name="com.androidcafe.sncuser.ui.home.subject.AddTeacherFragment"
+        android:label="AddTeacherFragment"
+        tools:layout="@layout/fragment_add_teacher"
+        >
+        <argument
+            android:name="course"
+            app:argType="string"
+            app:nullable="true"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/addStudentFragment"
+        android:name="com.androidcafe.sncuser.ui.home.subject.AddStudentFragment"
+        android:label="AddStudentFragment"
+        tools:layout="@layout/fragment_add_student">
+        <argument
+            android:name="course"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="year"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
 </navigation>

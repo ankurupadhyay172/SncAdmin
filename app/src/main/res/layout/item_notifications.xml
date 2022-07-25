@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-    <import type="com.ankurupadhyay.sncadmin.data.response.UserNotificationResponseModel.Result"/>
+    <import type="com.androidcafe.sncuser.data.response.UserNotificationResponseModel.Result"/>
         <variable
             name="model"
             type="Result" />

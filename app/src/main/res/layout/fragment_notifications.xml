@@ -5,7 +5,7 @@
 
     <data>
 
-        <import type="com.ankurupadhyay.sncadmin.ui.home.HomeViewModel"/>
+        <import type="com.androidcafe.sncuser.ui.home.HomeViewModel"/>
         <import type="android.view.View"/>
         <variable
             name="homeViewModel"

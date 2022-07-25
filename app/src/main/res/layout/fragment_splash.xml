@@ -2,7 +2,7 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
-        <import type="com.ankurupadhyay.sncadmin.ui.beforestart.AuthViewModel"/>
+        <import type="com.androidcafe.sncuser.ui.beforestart.AuthViewModel"/>
         <variable
             name="viewModel"
             type="AuthViewModel" />

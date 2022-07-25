@@ -16,8 +16,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:visibility="gone"
-        app:titleTextColor="@color/white"
-        android:theme="@style/BaseTheme"
         app:layout_constraintBottom_toTopOf="@+id/nav_host_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
